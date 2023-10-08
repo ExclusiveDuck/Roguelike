@@ -177,7 +177,7 @@ public class GameManager : MonoBehaviour
 
         weaponSO.ProjectileDamage = 16f;
         weaponSO.ProjectileFireRate = 0.2f;
-        weaponSO.ProjectileSpeed = 25f;
+        weaponSO.ProjectileSpeed = 35f;
         weaponSO.ProjectileLifetime = 0.8f;
         weaponSO.ExplodingBullets = false;
         weaponSO.ExplodingDamage = 9f;

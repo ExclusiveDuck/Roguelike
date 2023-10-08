@@ -319,8 +319,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 6855647508961170875}
+  manaBar: {fileID: 0}
   healthText: {fileID: 0}
+  manaText: {fileID: 0}
   pStatsSO: {fileID: 0}
+  weaponStatsSO: {fileID: 0}
 --- !u!1 &3126276632129713057
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +610,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPointRange: 10
   attackRange: 20
-  sightRange: 35
+  sightRange: 50
   isRanged: 1
   isGolem: 0
   isWizard: 0

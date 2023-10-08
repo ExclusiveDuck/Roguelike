@@ -70,6 +70,10 @@ public class GunSystem : MonoBehaviour
     public float meleeCombatTimer;
     public float meleeCombatTotalTime;
     public int meleeCombatStreak;
+
+
+
+
     private void Start()
     {
         pStats = GetComponent<PlayerStats>();
@@ -107,13 +111,10 @@ public class GunSystem : MonoBehaviour
             meleeCombatTimer = meleeCombatTotalTime;
             meleeCombatStreak++;
             StartCoroutine("MeleeAttack");
-            if (meleeCombatStreak > 1 && meleeCombatStreak < 3)
+            if (meleeCombatStreak == 2)
             {
                 Debug.Log("Streak");
                 meleeDamageCurrent += 10;
-                //meleeCombatTimer = meleeCombatTotalTime;
-                //meleeCombatStreak++;
-                //StartCoroutine("MeleeAttack");
             }
             if (meleeCombatStreak == 3)
             {
@@ -190,7 +191,6 @@ public class GunSystem : MonoBehaviour
             playerMovement.canMove = false;
             playerMovement.canDash = false;
             meleeParticle.Play();
-            meleeParticle.
             playerMovement.controller.Move(gameObject.transform.forward * meleeDistance * Time.deltaTime);
             yield return null;
         }
@@ -218,7 +218,7 @@ public class GunSystem : MonoBehaviour
     {
         if (canShoot)
         {
-            if (Input.GetKey(KeyCode.Mouse0) && canShootPrimary)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && canShootPrimary)
             {
                 canShootPrimary = false;
 

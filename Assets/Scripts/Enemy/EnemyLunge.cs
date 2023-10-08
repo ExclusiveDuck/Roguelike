@@ -28,7 +28,8 @@ public class EnemyLunge : MonoBehaviour
         float startTime = Time.time;
         while (Time.time < startTime + lungeTime)
         {
-            transform.position += enemyNav.player.position * lungeSpeed * Time.deltaTime;
+            Debug.Log("Lunge");
+            transform.position += enemyNav.player.forward * lungeSpeed * Time.deltaTime;
             yield return null;
         }
         yield return new WaitForSeconds(2);

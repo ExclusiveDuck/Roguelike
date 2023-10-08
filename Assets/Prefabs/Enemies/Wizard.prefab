@@ -174,7 +174,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPointRange: 7
   attackRange: 20
-  sightRange: 38
+  sightRange: 50
   isRanged: 0
   isGolem: 0
   isWizard: 1
@@ -200,7 +200,7 @@ MonoBehaviour:
   projectile: {fileID: 201683083923324199, guid: 95d04f11e5736184d97fc2438d147c8e, type: 3}
   attackPoint: {fileID: 1837096935147811990}
   attackResetTime: 1
-  attackForce: 20
+  attackForce: 21
   canAttack: 0
   isTrippleAttack: 1
 --- !u!54 &8845957860045540234
@@ -478,8 +478,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 3197163781309374}
+  manaBar: {fileID: 0}
   healthText: {fileID: 0}
+  manaText: {fileID: 0}
   pStatsSO: {fileID: 0}
+  weaponStatsSO: {fileID: 0}
 --- !u!1 &6092585710786378518
 GameObject:
   m_ObjectHideFlags: 0

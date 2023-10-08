@@ -19,7 +19,7 @@ MonoBehaviour:
   explodingDamage: 9
   projectileLifetime: 0.8
   maxMana: 250
-  currentMana: 66
+  currentMana: 25.61858
   beamDamage: 90
   beamCooldown: 4
   orbDamage: 22

@@ -605,7 +605,7 @@ MonoBehaviour:
     m_Bits: 64
   walkPointRange: 10
   attackRange: 6
-  sightRange: 30
+  sightRange: 50
   isRanged: 0
   isGolem: 1
   isWizard: 0

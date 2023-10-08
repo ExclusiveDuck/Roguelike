@@ -17,10 +17,15 @@ public class EnemyBasicMelee : MonoBehaviour
     }
     public void Attack()
     {
+        anim.SetBool("Attack", true);
+    }
+
+    public void ActuallyAttack()
+    {
         attackCollider.enabled = true;
         enemyNav.navAgent.speed = 0;
         Invoke("ResetAttack", attackLifeSpan);
-        anim.SetBool("Attack", true);
+        
     }
 
     private void ResetAttack()
